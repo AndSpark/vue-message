@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"target": "ES2017",
 		"lib": ["ESNext", "DOM", "DOM.Iterable"],
-		"module": "ESNext",
+		"module": "CommonJS",
 		"moduleResolution": "node",
 		"strict": true,
 		"resolveJsonModule": true,
