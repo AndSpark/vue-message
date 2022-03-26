@@ -1,14 +1,13 @@
 {
 	"name": "@andspark/vue-message",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "",
 	"main": "dist/index.js",
 	"scripts": {
 		"build": "vite build"
 	},
 	"files": [
-		"dist",
-		"tsconfig.json"
+		"dist"
 	],
 	"keywords": [],
 	"author": "",
