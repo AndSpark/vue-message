@@ -27,7 +27,7 @@ interface MessageProps {
 
 const MessageContainerPrefixId = `gls-message-container`
 
-function FaSolidTimesCircle(props: any) {
+function FaSolidTimesCircle(props: any = {}) {
 	return h(
 		'svg',
 		Object.assign(
@@ -42,7 +42,7 @@ function FaSolidTimesCircle(props: any) {
 		]
 	)
 }
-const LoadingIcon = (props: any) => {
+const LoadingIcon = (props: any = {}) => {
 	return h(
 		'svg',
 		Object.assign(
@@ -57,7 +57,7 @@ const LoadingIcon = (props: any) => {
 		]
 	)
 }
-function FaSolidCheckCircle(props: any) {
+function FaSolidCheckCircle(props: any = {}) {
 	return h(
 		'svg',
 		Object.assign(
@@ -72,7 +72,7 @@ function FaSolidCheckCircle(props: any) {
 		]
 	)
 }
-function FaSolidInfoCircle(props: any) {
+function FaSolidInfoCircle(props: any = {}) {
 	return h(
 		'svg',
 		Object.assign(
@@ -87,7 +87,7 @@ function FaSolidInfoCircle(props: any) {
 		]
 	)
 }
-function FaSolidExclamationCircle(props: any) {
+function FaSolidExclamationCircle(props: any = {}) {
 	return h(
 		'svg',
 		Object.assign(
@@ -131,10 +131,10 @@ const styles = {
 styleInject(css_248z)
 
 const Icon = {
-	success: h(FaSolidCheckCircle, null),
-	error: h(FaSolidTimesCircle, null),
-	info: h(FaSolidInfoCircle, null),
-	warning: h(FaSolidExclamationCircle, null),
+	success: FaSolidCheckCircle,
+	error: FaSolidTimesCircle,
+	info: FaSolidInfoCircle,
+	warning: FaSolidExclamationCircle,
 	loading: h(LoadingIcon, { class: styles['rotate'] })
 }
 
