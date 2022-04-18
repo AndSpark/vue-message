@@ -25,7 +25,7 @@ interface MessageProps {
 	duration?: number
 }
 
-const MessageContainerPrefixId = `gls-message-container`
+const MessageContainerPrefixId = `andspark-message-container`
 
 function FaSolidTimesCircle(props: any = {}) {
 	return h(
